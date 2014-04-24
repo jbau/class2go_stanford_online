@@ -1,0 +1,15 @@
+django
+celery
+django-celery
+mysql-python
+pil
+south
+django-storages
+gdata
+boto
+djangorestframework
+django-nose
+django-coverage
+html5lib
+pysimplesoap
+markdown

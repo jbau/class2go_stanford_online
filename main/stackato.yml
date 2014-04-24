@@ -1,0 +1,22 @@
+name: class2go2
+
+env:
+  DJANGO_SETTINGS_MODULE: settings
+
+services:
+  ${name}-db: mysql
+  ${name}-fs: filesystem 
+
+hooks:
+  post-staging:
+    - python manage.py syncdb --noinput
+    - python manage.py migrate
+    - echo "Run 'stackato run python manage.py createsuperuser' to create an admin user"
+#    - mkdir static
+#    - python manage.py collectstatic
+#    - touch /app/logs/django.log
+
+ignores:
+  - .git
+  - dev.db
+

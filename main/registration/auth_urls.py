@@ -25,7 +25,7 @@ consult a specific backend's documentation for details.
 
 from registration.forms import *
 
-from django.conf.urls.defaults import *
+from django.conf.urls import *
 
 from django.contrib.auth import views as auth_views
 from registration.login_wrapper import *
