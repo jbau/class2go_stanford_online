@@ -1,4 +1,4 @@
-name: class2go2
+name: class2go
 
 env:
   DJANGO_SETTINGS_MODULE: settings
